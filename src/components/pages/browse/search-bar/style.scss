@@ -1,0 +1,48 @@
+.search-bar {
+
+    margin-top: 70px;
+
+    .card {
+        border: 1px solid #3636;
+        .card-title {
+            font-size: 2rem;
+            margin: 0.5rem;
+        }
+    }
+
+    .search-bar__query {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 2px;
+        border: 0px;
+        font-size: 2rem;
+    }
+    
+
+    .search-bar__filter {
+        .search-bar__filter-icon {
+            top: -2.2rem;
+            right: 1rem;
+            cursor: pointer;
+        }
+    }
+
+    .search-bar__filter-panel {
+        display: none;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .search-bar__filter-panel ~ .search-bar__query:focus {
+        display: block;
+    }
+
+}
+
+.search-bar:focus,
+.search-bar:hover,
+.search-bar:active {
+    
+    .search-bar__filter-panel {
+        display: block;
+    }
+}

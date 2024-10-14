@@ -1,0 +1,57 @@
+{
+  "name": "vquote.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "webpack --mode=production --config webpack.config.js",
+    "start": "webpack-dev-server --config webpack.config.js --progress --open --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vquote/vquote.github.io.git"
+  },
+  "author": "yoga1290",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vquote/vquote.github.io/issues"
+  },
+  "homepage": "https://github.com/vquote/vquote.github.io#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-transform-class-properties": "^7.23.3",
+    "@babel/plugin-transform-object-rest-spread": "^7.24.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@types/react-router-dom": "^5.3.3",
+    "ajv": "^6.10.2",
+    "axios": "^1.7.7",
+    "babel-loader": "^8.0.5",
+    "bootstrap": "^4.3.1",
+    "css-loader": "^6.8.1",
+    "datatables.net-dt": "^1.10.21",
+    "file-loader": "^6.2.0",
+    "fork-ts-checker-webpack-plugin": "^9.0.2",
+    "html-webpack-plugin": "^5.5.4",
+    "jquery": "^3.5.1",
+    "moment": "^2.24.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.21.0",
+    "react-router-dom": "^6.21.0",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "typescript": "^5.4.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.2",
+    "yoga1290-ui-pool": "github:yoga1290/yoga1290-ui-pool#v24.10.11"
+  }
+}

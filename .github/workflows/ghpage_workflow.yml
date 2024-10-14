@@ -1,0 +1,43 @@
+# This is a basic workflow to help you get started with Actions
+name: generate-gh-page
+
+on:
+  push:
+    branches: [ master, main ]
+
+jobs:
+
+  build-ghpage:
+    permissions:
+     id-token: write # required for actions/deploy-pages@v4
+     pages: write
+
+    runs-on: ubuntu-latest
+    environment:
+        name: github-pages
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '21.4.0'
+    - name: Build and publish Frontend (GH Page)
+      env:
+        GITHUB_REPOSITORY: ${{github.repository}}
+        GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+        GITHUB_TOKEN: ${{ secrets.github_token }}
+        COMMIT_FILES: "./docs"
+      run: |
+        bash +x ./.github/workflows/ghpage.sh
+    # Store the gh-pages as artifact
+    # see https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts
+    - name: Upload GH-Page bundle
+      # uses: actions/upload-artifact@v4
+      uses: actions/upload-pages-artifact@v3
+      with:
+        name: github-pages
+        path: ./docs
+    # Deploy it as ghpage
+    # see https://github.com/actions/deploy-pages
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4.0.5

@@ -1,0 +1,35 @@
+.modal-window:before {
+
+    top: 0px;
+  right: 0px;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: fixed;
+  display: block;
+  z-index: 3;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.modal-window {
+    
+    top: 0px;
+    right: 0px;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    display: block;
+    z-index: 3;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgba($color: #000, $alpha: 8.0);
+
+    .modal-window__content {
+        z-index: 4;
+        
+        position: relative;
+
+    }
+}
