@@ -31,7 +31,7 @@ export default () => {
     
     const onAuthorQuery = 
         (text: string, authorResultPageNumber:number) : Promise<PagingAndSortingResult<Author>> => {
-            return findAuthors(text, authorResultPageNumber);
+            return findAuthors(text, authorResultPageNumber, '', false);
     };
     
     

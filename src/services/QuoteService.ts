@@ -105,9 +105,14 @@ export function postQuote(
         endtime
     };
     
+    return axios
+                .post(URL_POST_QUOTE, data)
+                .then((res)=> (res.data));
+    /*
     return isDevelopmentEnvironment?
         Promise.resolve(mockPagingAndSortingResult): 
                         axios
                             .post(URL_POST_QUOTE, data)
                             .then((res)=> (res.data));
+    // */
 }

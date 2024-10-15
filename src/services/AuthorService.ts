@@ -38,9 +38,9 @@ const mockPagingAndSortingResult = (authorName: string): PagingAndSortingResult<
     };
 };
 
-export function findAuthors(authorName?: string, pageNumber?: number, sortby?:string) : Promise<PagingAndSortingResult<Author>> {
+export function findAuthors(authorName?: string, pageNumber?: number, sortby?:string, mock:boolean = isDevelopmentEnvironment) : Promise<PagingAndSortingResult<Author>> {
 
-    return isDevelopmentEnvironment?
+    return !!mock?
             Promise.resolve(mockPagingAndSortingResult(authorName)): axios.get(`${URL_GET_AUTHORS}?${[
                                         authorName? `authorName=${authorName}`:'',
                                         pageNumber? `pageNumber=${pageNumber}`:'',
