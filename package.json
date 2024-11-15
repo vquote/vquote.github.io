@@ -52,6 +52,6 @@
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.2",
-    "yoga1290-ui-pool": "github:yoga1290/yoga1290-ui-pool#v24.10.11"
+    "yoga1290-ui-pool": "github:yoga1290/yoga1290-ui-pool#v24.11.20"
   }
 }

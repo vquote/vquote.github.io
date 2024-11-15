@@ -9,59 +9,14 @@
 
 
 
-    .quote-card:focus,
-    .quote-card:hover {
-        .card {
-            border: 0.1rem solid white;
+    .quote-card {
 
-            // -webkit-transform: scale(1.2, 1.2);
-            // transform: scale(1.2, 1.2);
-            // z-index: 2;
+        .card:hover,
+        .card:focus {
+            box-shadow: 0 5px 15px rgba(0,0,0, 0.9);            
         }
 
-        // .card::after,
-        // .card::after {
-        //     opacity: 1;
-        //     z-index: 2;
-        // }
-
-        
     }
 
-    // .quote-card {
-    //     .card::after {
-    //         // box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    //         box-shadow: 0 5px 15px rgba(255,255,255,0.3);
-    //         opacity: 0;
-    //         transition: opacity 0.3s ease-in-out;
-    //     }
-    // }
-
-
-    // .quote-card {
-    //     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    // }
-
-    // .quote-card {
-    //     .card::after {
-    //         // box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    //         box-shadow: 0 5px 15px rgba(255,255,255,0.3);
-    //         opacity: 0;
-    //         transition: opacity 0.3s ease-in-out;
-    //     }
-    //     .card:hover,
-    //     .card:focus {
-    //         // -webkit-transform: scale(1.25, 1.25);
-    //         // transform: scale(1.25, 1.25);
-    //         -webkit-transform: scale(1.25, 1.25);
-    //         transform: scale(1.25, 1.25);
-    //         z-index: 2;
-    //     }
-    //     .card:hover::after,
-    //     .card:focus::after {
-    //         opacity: 1;
-    //         z-index: 2;
-    //     }
-    // }
 
 }

@@ -16,7 +16,11 @@ let quotes: Quote[] = data.map((o:any) => ({
         id: o.video.id,
         youtubeId: o.video.youtubeId,
         thumbnail: o.video.thumbnail,
-        publishedDate: o.video.publishedDate
+        publishedDate: o.video.publishedDate,
+        channel: {
+            id: o.channel.id,
+            name: o.channel.name
+        },
     },
     author: {
         id: o.author.id,
@@ -44,7 +48,7 @@ const mockPagingAndSortingResult = (
                 authorIds.split(',').filter((aid:string) => aid == `${q.author.id}`).length > 0
             )):content;
     content = !!channelIds? content.filter(q => (
-                channelIds.split(',').filter((cid:string) => cid == `${q.channel.id}`).length > 0 
+                channelIds.split(',').filter((cid:string) => cid == `${q.video.channel.id}`).length > 0 
             )):content;
 
     const PAGE_SIZE = 12;

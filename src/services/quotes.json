@@ -1,1 +1,351 @@
-[{"id":56,"author":{"id":30,"name":"Jimmy Wales","thumbnail":null},"video":{"id":49,"channel":{"id":30,"name":"CNN","youtubeId":"UCupvZG-5ko_eiXAupbDfxWw","thumbnail":null},"youtubeId":"nho5NaLzc5Q","thumbnail":"https://i.ytimg.com/vi/nho5NaLzc5Q/hqdefault.jpg","publishedDate":"2017-07-25T18:49:01Z"},"channel":{"id":30,"name":"CNN","youtubeId":"UCupvZG-5ko_eiXAupbDfxWw","thumbnail":null},"quote":"The overall situation of all media organizations are facing, Turkey is quite dire but that's also part of a broader trend around the world and even in US where we have the great strength of the first amendment but we still seeing a lot more harassment of journalists","starttime":96,"endtime":112}]
+[
+    
+    {
+        "id": 62,
+        "author": {
+            "id": 30,
+            "name": "Jimmy Wales",
+            "thumbnail": null
+        },
+        "video": {
+            "id": 55,
+            "channel": {
+                "id": 33,
+                "name": "TIME",
+                "youtubeId": "UC8Su5vZCXWRag13H53zWVwA",
+                "thumbnail": null
+            },
+            "youtubeId": "257swlMMxmA",
+            "thumbnail": "https://i.ytimg.com/vi/257swlMMxmA/hqdefault.jpg",
+            "publishedDate": "2011-01-14T22:38:00Z"
+        },
+        "channel": {
+            "id": 33,
+            "name": "TIME",
+            "youtubeId": "UC8Su5vZCXWRag13H53zWVwA",
+            "thumbnail": null
+        },
+        "quote": "Are these facts relevant, are they verifiable? Is this just some trivial fluff or is it something really important, was it reported on a blog no one has never heard of or was it reported in TIME magazine or the New York Times or something we can count on as being reliable",
+        "starttime": 132,
+        "endtime": 150
+    }, {
+        "id": 602,
+        "author": {
+            "id": 402,
+            "name": "Great Nasser",
+            "thumbnail": null
+        },
+        "video": {
+            "id": 502,
+            "channel": {
+                "id": 202,
+                "name": "AP Archive",
+                "youtubeId": "UCHTK-2W11Vh1V4uwofOfR4w",
+                "thumbnail": null
+            },
+            "youtubeId": "TdBInQ7JNa8",
+            "thumbnail": "https://i.ytimg.com/vi/TdBInQ7JNa8/hqdefault.jpg",
+            "publishedDate": "2024-04-28T09:39:45Z"
+        },
+        "channel": {
+            "id": 202,
+            "name": "AP Archive",
+            "youtubeId": "UCHTK-2W11Vh1V4uwofOfR4w",
+            "thumbnail": null
+        },
+        "quote": "We accepted the UN Security Council Resolution. We are willing of course for a peaceful solution, the main part of this resolution is the withdrawal of the occupied forces, until now there was no result airing went on between the Arab countries and Israel for about 18 months but the Israelis refused to express their point of view. It is not only our right to liberate the occupied territory in our country, but I think it is our duty.",
+        "starttime": 53,
+        "endtime": 102
+    }, {
+        "id": 558,
+        "author": {
+            "id": 353,
+            "name": "El Sadat",
+            "thumbnail": null
+        },
+        "video": {
+            "id": 453,
+            "channel": {
+                "id": 303,
+                "name": "Face the Nation",
+                "youtubeId": "UC2x_qNZXKDxNP1j4jvHATRQ",
+                "thumbnail": null
+            },
+            "youtubeId": "HxG0jH3_nsM",
+            "thumbnail": "https://i.ytimg.com/vi/HxG0jH3_nsM/hqdefault.jpg",
+            "publishedDate": "2023-09-01T17:54:44Z"
+        },
+        "channel": {
+            "id": 303,
+            "name": "Face the Nation",
+            "youtubeId": "UC2x_qNZXKDxNP1j4jvHATRQ",
+            "thumbnail": null
+        },
+        "quote": "They (Israelis) want expansion. They don't want to fulfill the resolution of the (UN) Security Counselor, because the first item of the resolution is the withdrawal.",
+        "starttime": 687,
+        "endtime": 700
+    },
+    {
+        "id": 560,
+        "author": {
+            "id": 353,
+            "name": "El Sadat",
+            "thumbnail": null
+        },
+        "video": {
+            "id": 453,
+            "channel": {
+                "id": 303,
+                "name": "Face the Nation",
+                "youtubeId": "UC2x_qNZXKDxNP1j4jvHATRQ",
+                "thumbnail": null
+            },
+            "youtubeId": "HxG0jH3_nsM",
+            "thumbnail": "https://i.ytimg.com/vi/HxG0jH3_nsM/hqdefault.jpg",
+            "publishedDate": "2023-09-01T17:54:44Z"
+        },
+        "channel": {
+            "id": 303,
+            "name": "Face the Nation",
+            "youtubeId": "UC2x_qNZXKDxNP1j4jvHATRQ",
+            "thumbnail": null
+        },
+        "quote": "We are quite ready for peace. If there is not a practical solution, well we shall not prolong the ceasefire at all and this will be our faith, we shall fight to liberate our land.",
+        "starttime": 1243,
+        "endtime": 1261
+    },
+    {
+        "id": 297,
+        "author": {
+            "id": 116,
+            "name": "Gideon Levy",
+            "thumbnail": null
+        },
+        "video": {
+            "id": 195,
+            "channel": {
+                "id": 79,
+                "name": "The Chris Hedges YouTube Channel",
+                "youtubeId": "UCEATT6H3U5lu20eKPuHVN8A",
+                "thumbnail": null
+            },
+            "youtubeId": "nClOg2F75dk",
+            "thumbnail": "https://i.ytimg.com/vi/nClOg2F75dk/hqdefault.jpg",
+            "publishedDate": "2024-10-01T18:39:28Z"
+        },
+        "channel": {
+            "id": 79,
+            "name": "The Chris Hedges YouTube Channel",
+            "youtubeId": "UCEATT6H3U5lu20eKPuHVN8A",
+            "thumbnail": null
+        },
+        "quote": "I don't have to recall the example of the Yum Kipper War 73. El Sadat called for a peace treaty with Israel, Golda Meir said no and then came the war with 2700 Israeli soldiers killed and then Israel was ready to give up the Egyptian occupied territories. Without the war Israel would have never done it. So the message is if you want to achieve anything from us, only through force.",
+        "starttime": 205,
+        "endtime": 241
+    },
+    {
+        "id": 253,
+        "author": {
+            "id": 54,
+            "name": "Slavoj Žižek",
+            "thumbnail": null
+        },
+        "video": {
+            "id": 165,
+            "channel": {
+                "id": 47,
+                "name": "Big Think",
+                "youtubeId": "UCvQECJukTDE2i6aCoMnS-Vg",
+                "thumbnail": null
+            },
+            "youtubeId": "U7JgfB8PaAk",
+            "thumbnail": "https://i.ytimg.com/vi/U7JgfB8PaAk/hqdefault.jpg",
+            "publishedDate": "2016-11-28T00:17:15Z"
+        },
+        "channel": {
+            "id": 47,
+            "name": "Big Think",
+            "youtubeId": "UCvQECJukTDE2i6aCoMnS-Vg",
+            "thumbnail": null
+        },
+        "quote": "Islamic fundamentalism is strictly relative with the disintegration with the secular Islamic left which was pretty strong in the 50s and 60s",
+        "starttime": 30,
+        "endtime": 41
+    },
+    
+    {
+        "id": 563,
+        "author": {
+            "id": 353,
+            "name": "El Sadat",
+            "thumbnail": null
+        },
+        "video": {
+            "id": 453,
+            "channel": {
+                "id": 303,
+                "name": "Face the Nation",
+                "youtubeId": "UC2x_qNZXKDxNP1j4jvHATRQ",
+                "thumbnail": null
+            },
+            "youtubeId": "HxG0jH3_nsM",
+            "thumbnail": "https://i.ytimg.com/vi/HxG0jH3_nsM/hqdefault.jpg",
+            "publishedDate": "2023-09-01T17:54:44Z"
+        },
+        "channel": {
+            "id": 303,
+            "name": "Face the Nation",
+            "youtubeId": "UC2x_qNZXKDxNP1j4jvHATRQ",
+            "thumbnail": null
+        },
+        "quote": "Why did the United States give the Phantoms to the Israelis? to reach our depths in the country here? and to raid our factories? and schools? the children the schools? and send an advice in a shape of ultimatum on the 2nd of February 70, telling us that if you don't ceasefire, the Israelis will reach all the depths of the country? and we can't prevent them, while they are providing them with the Phantoms and the bombs and everything?",
+        "starttime": 1451,
+        "endtime": 1490
+    },
+    {
+        "id": 138,
+        "author": {
+            "id": 24,
+            "name": "Julian Assange",
+            "thumbnail": null
+        },
+        "video": {
+            "id": 104,
+            "channel": {
+                "id": 46,
+                "name": "Democracy Now!",
+                "youtubeId": "UCzuqE7-t13O4NIDYJfakrhw",
+                "thumbnail": null
+            },
+            "youtubeId": "vnWWgKxWvtY",
+            "thumbnail": "https://i.ytimg.com/vi/vnWWgKxWvtY/hqdefault.jpg",
+            "publishedDate": "2016-07-25T18:15:19Z"
+        },
+        "channel": {
+            "id": 46,
+            "name": "Democracy Now!",
+            "youtubeId": "UCzuqE7-t13O4NIDYJfakrhw",
+            "thumbnail": null
+        },
+        "quote": "WikiLeaks has become the rebel library of Alexandria",
+        "starttime": 47,
+        "endtime": 53
+    },
+    {
+        "id": 402,
+        "author": {
+            "id": 252,
+            "name": "Jimmy Carter",
+            "thumbnail": null
+        },
+        "video": {
+            "id": 302,
+            "channel": {
+                "id": 202,
+                "name": "AP Archive",
+                "youtubeId": "UCHTK-2W11Vh1V4uwofOfR4w",
+                "thumbnail": null
+            },
+            "youtubeId": "p7cCvNiOc9Q",
+            "thumbnail": "https://i.ytimg.com/vi/p7cCvNiOc9Q/hqdefault.jpg",
+            "publishedDate": "2015-07-21T13:54:56Z"
+        },
+        "channel": {
+            "id": 202,
+            "name": "AP Archive",
+            "youtubeId": "UCHTK-2W11Vh1V4uwofOfR4w",
+            "thumbnail": null
+        },
+        "quote": "More settlements have been announced, more roadblocks have been established, the prison around Gaza has been tightened",
+        "starttime": 34,
+        "endtime": 45
+    },
+    {
+        "id": 403,
+        "author": {
+            "id": 252,
+            "name": "Jimmy Carter",
+            "thumbnail": null
+        },
+        "video": {
+            "id": 303,
+            "channel": {
+                "id": 202,
+                "name": "AP Archive",
+                "youtubeId": "UCHTK-2W11Vh1V4uwofOfR4w",
+                "thumbnail": null
+            },
+            "youtubeId": "Pv49ZldOfkg",
+            "thumbnail": "https://i.ytimg.com/vi/Pv49ZldOfkg/hqdefault.jpg",
+            "publishedDate": "2015-07-31T11:02:30Z"
+        },
+        "channel": {
+            "id": 202,
+            "name": "AP Archive",
+            "youtubeId": "UCHTK-2W11Vh1V4uwofOfR4w",
+            "thumbnail": null
+        },
+        "quote": "Hamas leaders want peace and they want to have reconciliation not only with their Fata brothers but also eventually with Israelis to live side by side",
+        "starttime": 10,
+        "endtime": 23
+    },
+    {
+        "id": 559,
+        "author": {
+            "id": 353,
+            "name": "El Sadat",
+            "thumbnail": null
+        },
+        "video": {
+            "id": 453,
+            "channel": {
+                "id": 303,
+                "name": "Face the Nation",
+                "youtubeId": "UC2x_qNZXKDxNP1j4jvHATRQ",
+                "thumbnail": null
+            },
+            "youtubeId": "HxG0jH3_nsM",
+            "thumbnail": "https://i.ytimg.com/vi/HxG0jH3_nsM/hqdefault.jpg",
+            "publishedDate": "2023-09-01T17:54:44Z"
+        },
+        "channel": {
+            "id": 303,
+            "name": "Face the Nation",
+            "youtubeId": "UC2x_qNZXKDxNP1j4jvHATRQ",
+            "thumbnail": null
+        },
+        "quote": "Palestinian refugees, they must say that word according to the United Nations resolutions and they (Palestinian refugees) have the Right to their land, to their Homeland, in Israel, or in the occupied parts, or in anywhere; they have to say their word.",
+        "starttime": 932,
+        "endtime": 956
+    },
+    
+    {
+        "id": 561,
+        "author": {
+            "id": 353,
+            "name": "El Sadat",
+            "thumbnail": null
+        },
+        "video": {
+            "id": 453,
+            "channel": {
+                "id": 303,
+                "name": "Face the Nation",
+                "youtubeId": "UC2x_qNZXKDxNP1j4jvHATRQ",
+                "thumbnail": null
+            },
+            "youtubeId": "HxG0jH3_nsM",
+            "thumbnail": "https://i.ytimg.com/vi/HxG0jH3_nsM/hqdefault.jpg",
+            "publishedDate": "2023-09-01T17:54:44Z"
+        },
+        "channel": {
+            "id": 303,
+            "name": "Face the Nation",
+            "youtubeId": "UC2x_qNZXKDxNP1j4jvHATRQ",
+            "thumbnail": null
+        },
+        "quote": "There is a difference between liberating our land and waging war to gain a new land from the others.",
+        "starttime": 1265,
+        "endtime": 1277
+    }
+]

@@ -1,0 +1,122 @@
+.video-player {
+    margin-top: 70px;
+
+    .video-player__quote {
+        max-height: 500px;
+        height: 400px;
+
+        textarea {
+            color: white;
+            text-wrap: wrap;
+            font-size: 2rem;
+            background-color: transparent;
+        }
+    }
+
+
+
+    .video-player__time-interval {
+
+
+        .card-body {
+            align-content: center;
+        }
+
+        input {
+            width: 100%;
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+            border: 1px white solid;
+            background-color: transparent;
+        }
+    }
+
+    #player {
+        width: 100%;
+        min-height: 500px;
+    }
+
+
+    // .playlist-container {
+    //     overflow-x: scroll;
+    //     overflow-y: hidden;
+    //     text-wrap-mode: wrap;
+    // }
+    
+    // .playlist {
+        
+
+    //     width: max-content;
+        
+    // }
+
+    // .playlist_quote {
+
+    //     max-width: 20rem;
+
+    //     .playlist_quote-buttons {
+    //         visibility: hidden;
+    //     }
+
+        
+
+    //     .playlist_quote-button-left {
+    //         top: 7.5rem;
+    //         right: 0.5rem;
+    //     }
+    //     .playlist_quote-button-right {
+    //         float: right;
+    //         right: 0.5rem;
+    //         bottom: 8.2rem;
+    //     }
+
+    //     .card {
+    //         // 
+    //         // opacity: 0;
+    //         // transition: opacity 0.3s ease-in-out;
+    //         // display: inline-block;
+
+    //     }
+    //     transition: opacity 0.3s ease-in-out;
+
+        
+    //     display: inline-block;
+
+    // }
+
+    // .playlist_quote:hover, 
+    // .playlist_quote:focus,
+    // .playlist_quote:active {
+    
+    //     .playlist_quote-buttons {
+    //         visibility: visible;
+    //         z-index: 2;
+    //         cursor: pointer;
+    //         color: white;
+    //     }
+
+    //     // .card::after,
+    //     // .card::after {
+    //         // -webkit-transform: scale(1.2, 1.2);
+    //         // transform: scale(1.2, 1.2);
+    //         z-index: 2;
+
+    //     // }
+    //     .card {
+    //         box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+    //     }
+        
+    // }
+
+    
+    .scroll-vertical__outer-container {
+        
+        max-width: 100%;
+        overflow-x: scroll;
+        
+        .scroll-vertical__inner-container {
+            width: max-content;
+        }
+    }
+}
