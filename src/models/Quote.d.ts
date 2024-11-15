@@ -1,32 +1,46 @@
 export type Video = {
-    id?: string;
+    id?: number;
     thumbnail: string;
-    channelId: string;
+    channelId?: string;
+    channel?: Channel;
     youtubeId: string;
     publishedDate: string;
 }
 
 export type Author = {
-    id?: string;
+    id?: number;
     name: string;
 }
 
 export type Channel = {
-    id: string;
+    id?: number;
     name: string;
     youtubeId: string;
     thumbnail: string;
 };
 
 export type Quote = {
-    id?: string;
-    creationTime: number;
+    id?: number|string;
+    creationTime?: number;
     video: Video;
     author: Author;
-    channel: Channel;
     quote: string;
     starttime: number;
     endtime: number;
-    publishedDate: string;
+    publishedDate?: string;
 }
 
+export type User = {
+
+    id?: number;
+    name: string;
+
+}
+
+export type Playlist = {
+
+    id?: number;
+    user?: User;
+    quotes: Quote[];
+
+}

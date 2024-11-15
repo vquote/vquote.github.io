@@ -44,7 +44,7 @@ const mockPagingAndSortingResult = (
                 authorIds.split(',').filter((aid:string) => aid == `${q.author.id}`).length > 0
             )):content;
     content = !!channelIds? content.filter(q => (
-                channelIds.split(',').filter((cid:string) => cid == `${q.channel.id}`).length > 0 
+                channelIds.split(',').filter((cid:string) => cid == `${q.video.channel.id}`).length > 0 
             )):content;
 
     const PAGE_SIZE = 12;

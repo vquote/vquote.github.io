@@ -13,7 +13,10 @@ import {
     mapTimeToSecs,
 } from '../../util/timeUtil';
 
-export default () => {
+import YoutubePlayer, { PlayerInstanceProp } from '../player-yt';
+
+
+export default ( /*{ _Quotes } :PlaylistProp*/ ) => {
 
     const [videoId, setVideoId] = useState('');
     const [quote, setQuote] = useState('');
@@ -36,10 +39,10 @@ export default () => {
     
     
 
-    let player :any = null;
+    let player :PlayerInstanceProp = null;
 
-    const onReady = (event : any) => {
-        console.log('event', event.target);
+    const onReady = (_player : PlayerInstanceProp) => {
+        player= _player;
 
         if (!!hasStartTimeQuery) {
             // event.target.seekTo(hasStartTimeQuery[1]);
@@ -53,13 +56,18 @@ export default () => {
     // var done = false;
     let hasPlayerPreviousPausedState = true;
     let videoTimeTrackerIntv: any = null; 
-    function onStateChange(event:any) {
+    function onStateChange(hasPlayerPlayingState: boolean) {
+
+        console.log('onStateChange', hasPlayerPlayingState, player);
 
         clearInterval(videoTimeTrackerIntv);
         
         let videoTime = player.getCurrentTime();
+        
+        console.log('videoTime', player.getCurrentTime());
+
         let videoTimeFormat = mapSecsToTimeFormat( videoTime );
-        let hasPlayerPlayingState = event.data == (window as any)['YT'].PlayerState.PLAYING;
+        // let hasPlayerPlayingState = event.data == (window as any)['YT'].PlayerState.PLAYING;
 
         if (!videoIntervalFixed) {
 
@@ -100,41 +108,12 @@ export default () => {
             // setTimeout(stopVideo, 6000);
             // done = true;
 
-            console.log('PlayerState.PLAYING', (window as any)['YT'].PlayerState);
-
     
         }
     }
 
-    // function stopVideo() {
-    //   player.stopVideo();
-    // }
-
-    (window as any)['onYouTubeIframeAPIReady'] = () => {
-        player = new (window as any)['YT'].Player('player', {
-          height: '390',
-          width: '640',
-          videoId: videoId,
-          playerVars: {
-            // 'playsinline': 1,
-            'autoplay': 1,
-          },
-          events: {
-            onReady,
-            onStateChange
-          }
-        });
-        console.log('player', player);
-        (window as any)['player'] = player;
-    }
-
     
     useEffect(() => {
-        console.log('useEffect', 'youtube');
-        var tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/iframe_api?origin=http://localhost:8081";
-        tag.async = true;
-        document.body.appendChild(tag);
 
         const hasVideoQuery = window.location.href.match(/\?.*v\=([^&]*)/);
         if (!!hasVideoQuery) {
@@ -159,13 +138,20 @@ export default () => {
                 <div className='card-body'>
                 
                     <div className="col-12 embed-responsive embed-responsive-16by9">
-                        
+{/*                         
                         <iframe id="player"
                                 height="100%"
                                 
                                 src={`https://www.youtube.com/embed/${videoId}?enablejsapi=1`}
                                 frameBorder={"0"}
-                        ></iframe>
+                        ></iframe> */}
+
+                        <YoutubePlayer
+                            videoId={videoId}
+                            onReady={onReady}
+                            onStateChange={onStateChange}
+                        />
+                        
 
                         {/* {!hasPlayerReady && <>
                             <CardWithIcon

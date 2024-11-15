@@ -25,10 +25,32 @@ export default () => {
                                     size: 0
                                 });
 
-    const [pageNumber, setPageNumber] = useState(0);
-    const [query, setQuery] = useState('');
-    const [authorIds, setAuthorIds] = useState('');
-    const [channelIds, setChannelIds] = useState('');
+    const initQuery: any = () => {
+        const hasQueryInQueryString = window.location.href.match(/\?.*query\=([^&]*)/);
+        const hasAuthorIdsInQueryString = window.location.href.match(/\?.*authorIds\=([^&]*)/);
+        const hasChannelIdsInQueryString = window.location.href.match(/\?.*channelIds\=([^&]*)/);
+        const hasPageNumberInQueryString = window.location.href.match(/\?.*pageNumber\=([^&]*)/);
+
+        const ret = {
+            query: hasQueryInQueryString? hasQueryInQueryString[1]:0,
+            authorIds: hasAuthorIdsInQueryString? hasAuthorIdsInQueryString[1]:'',
+            channelIds: hasChannelIdsInQueryString? hasChannelIdsInQueryString[1]:'',
+            pageNumber: hasPageNumberInQueryString? hasPageNumberInQueryString[1]:0,
+        };
+        console.log(ret);
+        return ret;
+    };
+    const initQ = initQuery();
+    const updateQueryString = () => {
+        const uri = `/?query=${query}&pageNumber=${pageNumber}&authorIds=${authorIds}&channelIds=${channelIds}`;
+        window.history.replaceState(null, '', uri);
+    };
+
+    const [pageNumber, setPageNumber] = useState(initQ.pageNumber);
+    const [query, setQuery] = useState(initQ.query);
+    const [authorIds, setAuthorIds] = useState(initQ.authorIds);
+    const [channelIds, setChannelIds] = useState(initQ.channelIds);
+    // updateQueryString();
     
     const onQueryChange = (query:string, authorIds:string, channelIds:string) => {
 
@@ -36,17 +58,23 @@ export default () => {
         setAuthorIds(authorIds);
         setChannelIds(channelIds);
         setPageNumber(0);
+        // updateQueryString();
         return findQuotes(query, authorIds, channelIds, pageNumber).then(
             ( _quotes: PagingAndSortingResult<Quote>) => {
                 setQuotes(_quotes);
+                updateQueryString();
             });
             
     };
+
+    // useEffect(updateQueryString,
+    //         [pageNumber, query, authorIds, channelIds]);
 
     useEffect(() => {
         findQuotes(query, authorIds, channelIds, pageNumber).then(
             ( _quotes: PagingAndSortingResult<Quote>) => {
                 setQuotes(_quotes);
+                // updateQueryString();
             });
     }, [pageNumber]);
 
@@ -57,7 +85,7 @@ export default () => {
             onQueryChange={onQueryChange} />
 
         {!quotes.first && <>
-            <div className='col-12 col-sm-4 col-md-3 col-lg-2 align-self-stretch d-flex'>
+            <div className='col-12 col-sm-4 col-md-3 col-lg-2 align-self-stretch d-flex m-0 p-0'>
                 <CardWithIcon
                     title="Previous"
                     icon="arrow_back_ios"
@@ -70,7 +98,7 @@ export default () => {
             
             <div 
                 key={`${idx}-${new Date().getTime()}`}
-                className='quote-card col-12 col-sm-6 col-md-4 col-lg-3 align-self-stretch d-flex'>
+                className='quote-card col-12 col-sm-6 col-md-4 col-lg-3 align-self-stretch d-flex p-0 m-0'>
                 <CardFeatured
                     title={author.name}
                     subtitle={new Date(video.publishedDate).toLocaleDateString()}
@@ -101,7 +129,7 @@ export default () => {
         ))}
 
         {!quotes.last && <>
-            <div className='col-12 col-sm-4 col-md-3 col-lg-2 align-self-stretch d-flex'>
+            <div className='col-12 col-sm-4 col-md-3 col-lg-2 align-self-stretch d-flex m-0 p-0'>
                 <CardWithIcon
                     title="Next"
                     icon="arrow_forward_ios"

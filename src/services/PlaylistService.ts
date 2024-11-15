@@ -1,11 +1,11 @@
-import { Channel, Quote } from "../models/Quote";
+import { Channel, Playlist, Quote } from "../models/Quote";
 import data from './quotes.json';
 import axios from 'axios';
 
 import PagingAndSortingResult from 'yoga1290-ui-pool/react/search-and-select-list/model/PagingAndSortingResult'
 
 import {
-    URL_GET_CHANNEL,
+    URL_GET_PLAYLISTS,
     isDevelopmentEnvironment
 } from '../config';
 
@@ -39,11 +39,11 @@ const mockPagingAndSortingResult = (channelName: string): PagingAndSortingResult
     };
 };
 
-export function findChannels(channelName?: string, pageNumber?: number, sortby?:string) : Promise<PagingAndSortingResult<Channel>> {
+export function findPlaylist(_userId?: string, query?: string, pageNumber?: number, sortby?:string) : Promise<PagingAndSortingResult<Playlist>> {
 
     return isDevelopmentEnvironment?
-            Promise.resolve(mockPagingAndSortingResult(channelName)): axios.get(`${URL_GET_CHANNEL}?${[
-                                        channelName? `channelName=${channelName}`:'',
+            Promise.resolve(mockPagingAndSortingResult(query)): axios.get(`${URL_GET_PLAYLISTS}?${[
+                                        query? `query=${query}`:'',
                                         pageNumber? `pageNumber=${pageNumber}`:'',
                                         sortby? `sortby=${sortby}`:''
                                     ].join('&')}`).then((res)=> (res.data));

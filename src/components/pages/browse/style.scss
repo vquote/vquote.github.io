@@ -9,58 +9,52 @@
 
 
 
-    .quote-card:focus,
-    .quote-card:hover {
+    .quote-card {
+
         .card {
-            border: 0.1rem solid white;
-
-            // -webkit-transform: scale(1.2, 1.2);
-            // transform: scale(1.2, 1.2);
-            // z-index: 2;
+            border: 0rem;
         }
-
-        // .card::after,
+        
         // .card::after {
-        //     opacity: 1;
+        //     // box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        //     box-shadow: 0 5px 15px rgba(255,255,255);
+        //     opacity: 0;
+        //     visibility: hidden;
+        //     transition: opacity 0.3s ease-in-out;
         //     z-index: 2;
         // }
-
         
+
+        // .car:after {
+        //         // opacity: 1;
+        //         box-shadow: 0 5px 15px rgba(255,255,255,0.8);
+        //         opacity: 0;
+        //         // visibility: hidden;
+
+        //         transition: opacity 0.3s ease-in-out;
+            
+        // }
+
+        // .card:hover {
+        //         opacity: 1;
+        //         box-shadow: 0 5px 15px rgb(255, 255, 255);
+                
+        //         visibility: visible;
+        //         z-index: 2;
+        //         // border: 1px solid white;
+        //         transition: opacity 0.3s ease-in-out;
+            
+        // }
+
     }
 
-    // .quote-card {
+    // .quote-card:hover {
     //     .card::after {
     //         // box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    //         box-shadow: 0 5px 15px rgba(255,255,255,0.3);
-    //         opacity: 0;
-    //         transition: opacity 0.3s ease-in-out;
-    //     }
-    // }
-
-
-    // .quote-card {
-    //     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    // }
-
-    // .quote-card {
-    //     .card::after {
-    //         // box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    //         box-shadow: 0 5px 15px rgba(255,255,255,0.3);
-    //         opacity: 0;
-    //         transition: opacity 0.3s ease-in-out;
-    //     }
-    //     .card:hover,
-    //     .card:focus {
-    //         // -webkit-transform: scale(1.25, 1.25);
-    //         // transform: scale(1.25, 1.25);
-    //         -webkit-transform: scale(1.25, 1.25);
-    //         transform: scale(1.25, 1.25);
-    //         z-index: 2;
-    //     }
-    //     .card:hover::after,
-    //     .card:focus::after {
+    //         box-shadow: 0 5px 15px rgba(255,255,255);
     //         opacity: 1;
-    //         z-index: 2;
+    //         visibility: visible;
+    //         transition: opacity 0.3s ease-in-out;
     //     }
     // }
 
