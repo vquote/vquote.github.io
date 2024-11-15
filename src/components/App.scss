@@ -1,7 +1,10 @@
-// @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css' 
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 body {
-    background-color: #7f7f7f;
-    margin-top: 5rem;
+    // background-color: #7f7f7f;
+    background-color: #bfbcbc;
+    
+    // margin-top: 5rem;
 }
 
 .row {
@@ -12,5 +15,5 @@ body {
 
 nav.navbar {
     width: 100%;
-    position: fixed;
+    position: relative;
 }

@@ -4,12 +4,13 @@ import { HashRouter, Route, Routes } from 'react-router-dom'
 import Header, { HeaderProp } from "yoga1290-ui-pool/react/header";
 
 import ReportsPage from "./pages/reports";
-import VideoPage from "./player";
+import VideoPage from "./video-add-quote";
 import AccountPage from "./pages/account";
 import Login from './pages/login';
 
 import './App.scss';
 import BrowsePage from './pages/browse';
+import VideoPlaylist from './video-playlist';
 
 const headerProps: HeaderProp = {
     brand: 'VQuote',
@@ -51,7 +52,7 @@ export default () => {
             
 
             <div className="container-fluid">
-                    <div className="mx-auto col-lg-10 col-md-10 col-sm-12 col-12">
+                    <div className="mx-auto p-0 col-lg-10 col-md-10 col-sm-12 col-12">
                         <Routes>
 
                             <Route 
@@ -82,6 +83,11 @@ export default () => {
                             <Route
                                 path="/video"
                                 element={<VideoPage/>}
+                            />
+
+                            <Route
+                                path="/playlist"
+                                element={<VideoPlaylist/>}
                             />
 
                             

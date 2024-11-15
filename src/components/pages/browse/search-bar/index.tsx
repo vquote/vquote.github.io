@@ -67,15 +67,15 @@ export default ({ onQueryChange }: SearchBarProp) => {
                 type="text"
                 onChange={(e) => (setQuery(e.target.value))}
                 placeholder="Quote" />
-            <div className="search-bar__filter col-12 position-relative">
+            <div className="search-bar__filter col-12 position-relative p-0">
                 <span className="search-bar__filter-icon position-absolute material-symbols-outlined align-middle">
                 search
                 </span>
             </div>
 
-            <div className="col-12 position-relative my-2">
-                <div className="search-bar__filter-panel card col-12 bg-dark animate__animated animate__fadeDown position-absolute">
-                    <div className="card-body row">
+            <div className="col-12 position-relative my-2 p-0">
+                <div className="search-bar__filter-panel card col-12 bg-dark animate__animated animate__fadeDown position-absolute p-0">
+                    <div className="card-body row p-0">
                         
 
                         <div className='col-12 col-md-6'>
